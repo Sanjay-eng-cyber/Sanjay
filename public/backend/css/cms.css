@@ -1,0 +1,349 @@
+.label-title {
+    font-weight: bolder;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+div {
+    word-wrap: break-word;
+}
+
+::selection {
+    color: white;
+    background: #536adde8;
+}
+
+.blue-col-a {
+    color: #445ede !important;
+}
+
+#sidebar,
+#sidebar ul.menu-categories.ps {
+    height: 95% !important;
+}
+
+#content>div {
+    /* height: 100% !important; */
+}
+
+#content .layout-top-spacing {
+    margin-top: 0 !important;
+}
+
+.min-height-20em {
+    min-height: 20em;
+}
+
+.cust-title {
+    color: #4361ee !important;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.active_link {
+    color: orange;
+}
+
+.w-290-px {
+    width: 290px !important;
+}
+
+.lg-icon {
+    font-family: lg !important;
+}
+
+.fc .fc-button-primary {
+    color: #4361ee !important;
+    border-color: #4361ee !important;
+    background-color: transparent !important;
+}
+
+.fc .fc-button-active {
+    color: #fff !important;
+    background-color: #4361ee !important;
+}
+
+.fc .fc-button-primary:focus {
+    box-shadow: 0 0 0 0.2rem #43acee9d !important;
+}
+
+.form-group label,
+legend,
+label {
+    color: #4361ee;
+    font-weight: bolder;
+}
+
+legend {
+    font-weight: bolder !important;
+}
+
+form .widget-heading {
+    color: #4361ee;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#sidebar ul.menu-categories li.menu>.dropdown-toggle {
+    padding-bottom: 12px;
+}
+
+#sidebar ul.menu-categories li.menu>.dropdown-toggle i.bx,
+#sidebar ul.menu-categories li.menu>.dropdown-toggle i.far {
+    color: #888ea8;
+    margin-right: 18px;
+    vertical-align: middle;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+#sidebar ul.menu-categories li.menu>.dropdown-toggle[aria-expanded="true"] i.bx,
+#sidebar ul.menu-categories li.menu>.dropdown-toggle[aria-expanded="true"] i.far {
+    color: #fff;
+}
+
+.table .heading-center-text {
+    vertical-align: middle;
+}
+
+.vission_chart_submit_btn {
+    display: flex;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+    cursor: not-allowed;
+    background-color: #f1f2f3 !important;
+    color: black;
+}
+
+.vission_padding_cut {
+    padding: 0px 7px 0px 7px;
+}
+
+.controllinput_Spectacle {
+    width: 72px;
+    padding: 0px;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.search_btn_size {
+    padding: 10px 20px 10px 20px;
+}
+
+.pa_form_responsive .pa_form_input {
+    width: 272px;
+}
+
+/*
+padding all page */
+
+.temp-a {
+    padding: 0px 24px 20px 24px;
+}
+
+.temp-index {
+    padding: 20px 20px 20px 15px;
+}
+
+@media (max-width: 992px) {
+    .controllinput_Spectacle {
+        width: 100%;
+        padding: 0px;
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+.app_form .app_form_input {
+    width: 290px;
+    margin-left: 15px;
+}
+
+@media (max-width: 632px) {
+    .app_form {
+        display: flex;
+
+        flex-flow: row wrap;
+        -ms-flex-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .app_form .app_form_select {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .app_form .app_form_input {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .app_form .search_btn {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .controllinput {
+        padding: 10px;
+        width: 130px;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar {
+        flex-direction: column;
+    }
+
+    .fc .fc-toolbar.fc-header-toolbar>.fc-toolbar-chunk {
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .w-290-px {
+        width: 100% !important;
+    }
+
+    .vission_chart_submit_btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followup_submit_btn {
+        width: 100%;
+    }
+
+    .followup_appointment_btn {
+        width: 100%;
+    }
+
+    .medicine_pagination {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+        border-radius: 0.25rem;
+        justify-content: space-around;
+    }
+
+    .padding_remove_class {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .layout-spacing {
+        padding: 0px;
+    }
+
+    .pa_form_responsive {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pa_search_btn {
+        margin-top: 15px;
+    }
+
+    .pa_form_responsive .pa_form_input {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .pa-padding-remove {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1em;
+}
+
+.auth-form-input {
+    position: relative;
+}
+
+.auth-form-input .icon {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    transform: translateY(-50%);
+}
+
+.auth-form-input input {
+    border: none;
+    font-size: 25px;
+    background: #ffffff;
+    box-shadow: 1.41941px 1.41941px 8.51649px rgba(0, 0, 0, 0.12);
+    border-radius: 5.67766px;
+}
+
+.auth-page-bg {
+    background-color: #f1f2f8;
+}
+
+.auth-text-primary {
+    color: #2D358B;
+}
+
+.auth-bg-primary {
+    background-color: #2D358B !important;
+}
+
+.header-container .navbar-nav.theme-brand {
+
+    background: #445ede !important;
+}
+
+.mce-notification-warning {
+    display: none;
+}
+
+thead tr th:first-child {
+    width: 75px;
+}
+
+#user_name {
+    text-align: left;
+    color: blue;
+    margin: 0 0 20px 0;
+}
+
+.auth-logo{
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10px;
+    font-style: italic;
+}
+
+.login-logo{
+    color: rgb(89, 13, 182);
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10px;
+    font-style: italic; 
+    margin-left: 25px;
+}
