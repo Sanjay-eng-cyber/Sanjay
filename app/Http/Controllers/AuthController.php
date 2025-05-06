@@ -19,15 +19,17 @@ class AuthController extends Controller
             'password' => 'required|min:8|max:16'
         ]);
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password)
-        ]);
+        $user = new User;
+           $user->name = $request->name;
+           $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+        if($user->save()){
+            session(['user_id' => $user->id, 'user_name' => $user->name]);
+            
+            return redirect('dashboard')->with(["alert-type" => "success", "message" => "Register Sucessfully"]);
 
-        session(['user_id' => $user->id, 'user_name' => $user->name]);
+        }
 
-        return redirect('dashboard')->with(["alert-type" => "success", "message" => "Register Sucessfully"]);
     }
 
     public function showLogin() {
@@ -44,7 +46,7 @@ class AuthController extends Controller
 
         if ($user && Hash::check($request->password, $user->password)) {
             session(['user_id' => $user->id, 'user_name' => $user->name]);
-            return redirect('dashboard');
+            return redirect('dashboard')->with(["alert-type" => "success", "message" => "Login Sucessfully"]);
         }
 
         return back()->with('fail', 'Invalid credentials');

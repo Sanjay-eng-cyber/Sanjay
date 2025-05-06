@@ -29,16 +29,16 @@
 
             <div class="statbox widget box box-shadow">
                 <div class="widget-content widget-content-area">
-                    <h3 id="user_name">Welcome {{session('user_name')}}</h3>
+                    <h3 id="user_name">Welcome {{ session('user_name') }}</h3>
                 </div>
             </div>
         </div>
     </div>
-    @endsection
-    <style>
-        .widget {
-            padding: 20 px !important;
-        }
-    </style>
-    @section('js')
-    @endsection
+@endsection
+<style>
+    .widget {
+        padding: 20 px !important;
+    }
+</style>
+@section('js')
+@endsection
