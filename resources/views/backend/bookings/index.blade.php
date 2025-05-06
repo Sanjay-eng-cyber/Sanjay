@@ -55,7 +55,7 @@
                                             <td>{{ dd_format($booking->event->event_date, 'd-m-Y') }}
                                             </td>
                                             <td>{{ $booking->event->venue }}</td>
-                                            <td>{{ dd_format($booking->created_at, 'd-m-Y') }}</td>
+                                            <td>{{ dd_format($booking->created_at, 'd-m-Y h:i a') }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
